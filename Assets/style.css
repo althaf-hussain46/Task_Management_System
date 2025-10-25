@@ -1,0 +1,190 @@
+body{
+background-color:#FFFFFF;
+}
+
+#tms_title{
+height:140px;
+/* border:1px solid black; */
+display:flex;
+justify-content:center;
+align-items:center;
+
+}
+
+#role_selection_title{
+height:140px;
+/* border:1px solid black; */
+display:flex;
+justify-content:center;
+align-items:center;
+
+}
+
+#role_selection_card{
+
+display:flex;
+justify-content:center;
+align-items:center;
+gap:220px;
+}
+
+/* Admin Login Form Design Start */
+#adminLoginDiv{
+
+border:1px solid red;
+height:710px;
+display:flex;
+justify-content:flex-end;
+align-items:center;
+
+
+}
+#adminLoginForm{
+border:1px solid black;
+border-radius:5%;
+display: flex;
+flex-direction:column;
+align-items:center;
+text-align:center;
+height:280px;
+width:350px;
+margin-right:100px;
+}
+
+#adminName{
+    width:270px;
+
+}
+#adminPassword{
+width:270px;
+
+}
+#adminLoginBtn{
+
+width: 270px;
+}
+
+/* Admin Login Form Design End */
+
+/* Admin DashBoard Design Start */
+/* #admin_dashboard_page_grid{
+
+grid-template-areas: "header logout"
+                     "mainContent"
+;
+
+grid-template-columns: 1fr 1fr;
+grid-template-rows: auto auto;
+
+}
+
+#admin_navbar_header{
+
+grid-area: header;
+height:120px;
+border:1px solid black;
+}
+
+#admin_dashboard_main_content{
+
+grid-area:mainContent;
+border:1px solid red;
+height:400px;
+grid-column: 1/span 2;
+}
+
+#admin_navbar_logout{
+grid-area: logout;
+} */
+/* Admin DashBoard Design End */
+
+/* User Login Form Design Start */
+
+
+#userLoginDiv{
+
+border:1px solid red;
+height:710px;
+display:flex;
+justify-content:flex-end;
+align-items:center;
+
+
+}
+#userLoginForm{
+border:1px solid black;
+border-radius:5%;
+display: flex;
+flex-direction:column;
+align-items:center;
+text-align:center;
+height:280px;
+width:350px;
+margin-right:100px;
+}
+
+#userName{
+    width:270px;
+
+}
+#userPassword{
+width:270px;
+
+}
+#userLoginBtn{
+
+width: 270px;
+}
+
+/* User Login Form Design End */
+
+
+
+/* Project Form Design Start */
+
+
+
+#projectDescription{
+    width:480px;
+}
+
+#projectTableDiv{
+    
+    height:180px;
+    width:1510px;
+    overflow-y: scroll;
+}
+
+#projectTableHeader{
+position:sticky;
+z-index: 1;
+top:0;
+
+}
+#projectSearchForm{
+margin-top:100px;
+
+}
+#projectSearchBar{
+margin-left:10px;
+
+width:50px;
+height:50px;
+border-radius: 50%;
+background-image: url('../Images/search_image.jpg');
+background-repeat: no-repeat;
+background-size:50px;
+background-position-y: 4px;
+transition: width 2s;
+}
+#projectSearchBar:focus{
+    border-radius: 10px;
+    width: 420px;
+    padding-left:50px;
+    border:none;
+}
+
+
+
+/* Project Form Design And Table Design End */
+
