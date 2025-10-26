@@ -1,57 +1,60 @@
+<style>
+#navbar-header {
+
+    color: white;
+    margin-top: -10px;
+    display: flex;
+    width: 100%;
+    height: 80px;
+    /* border: 1px solid white; */
+}
+
+#title-label {
+    display: flex;
+    width: 160%;
+    margin-top: -10px
+        /* border: 1px solid red; */
+}
+
+#admin-image {
+
+    width: 40%;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    margin-top: -10px;
+    /* border: 1px solid black; */
+
+}
+
+#logout-btn-div {
+
+    width: 20%;
+    /* border: 1px solid yellow; */
+    display: flex;
+    justify-content: end;
+
+}
+</style>
+
 <?php
 include_once("../Config/config.php");
 include_once(DIR_URL . "/Includes/header.php");
 
 ?>
 
-<nav class="navbar navbar-expand-lg bg-body-tertiary">
-    <div class="container-fluid">
-        <a class="navbar-brand" href="#">TMS</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Home</a>
-                </li>
-
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                        aria-expanded="false">
-                        Management
-                    </a>
-                    <ul class="dropdown-menu">
-                        <li><a class="dropdown-item"
-                                href="<?php echo BASE_URL . "/Admin/projectForm.php"; ?>">Project</a>
-                        </li>
-                        <li><a class="dropdown-item" href="<?php echo BASE_URL . "/Admin/projectList.php"; ?>">Project
-                                List
-                            </a>
-                        </li>
-                        <li><a class="dropdown-item" href="<?php echo BASE_URL . "/Admin/taskForm.php"; ?>">Task</a>
-                        </li>
-                        <li>
-                            <hr class=" dropdown-divider">
-                        </li>
-                        <li><a class="dropdown-item" href="#">Dead Line Tracking</a></li>
-                    </ul>
-                </li>
-
-            </ul>
-            <form style="display:flex; gap:60px;">
-                <label for="" style="display:flex;flex-direction:column">
-                    <img style="height:30px;float:left" src=" <?php echo BASE_URL . "/Images/admin_image.jpeg"; ?>"
-                        alt="">
-                    Admin
-                </label>
-
-                <a href="<?php echo BASE_URL . "/logout.php"; ?>" class="btn btn-outline-danger">Logout</a>
-            </form>
-        </div>
+<div id="navbar-header">
+    <div id="title-label">
+        <img style="width:80px;" src=" <?php echo BASE_URL."../Images/task_logo.png";?>" alt="">
+        <h1>Task Management System</h1>
     </div>
-</nav>
+    <div><img src="<?php echo BASE_URL . "../Images/admin_image.jpeg"  ?>" id="admin-image" alt="">
+        <span style="    font-weight: bolder;"> Admin</span>
+    </div>
+    <div id="logout-btn-div" style=""><a href="<?php echo BASE_URL . "../logout.php" ?>" class="btn btn-danger"
+            style="width:140px;font-weight:bolder;margin-top:-1px">Logout</a>
+    </div>
+</div>
 
 
 
