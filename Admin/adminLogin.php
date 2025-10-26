@@ -11,7 +11,7 @@ if (isset($_POST['adminLoginSubmitBtn'])) {
     $admin_name = "admin";
     $admin_password = "123";
 
-    if ($adminName == $admin_name && $admin_password == $admin_password) {
+    if ($adminName == $admin_name && $adminPassword == $admin_password) {
         header("Location: " . BASE_URL . "/Admin/adminDashBoard.php");
     } else {
         echo "admin not found";
@@ -48,5 +48,45 @@ if (isset($_POST['adminLoginSubmitBtn'])) {
         </form>
     </div>
 </body>
+
+
+<script>
+    window.onload = () => {
+        let admin = document.getElementById("adminName");
+        if (admin) {
+            admin.focus();
+        }
+
+    }
+
+
+    document.getElementById("adminName").addEventListener("keydown", (event) => {
+
+
+
+        if (event.key == "Enter") {
+            event.preventDefault();
+            let admin_pass = document.getElementById("adminPassword");
+            if (admin_pass) {
+                admin_pass.focus();
+                admin_pass.select();
+            }
+        }
+    })
+
+
+    document.getElementById("adminPassword").addEventListener("keydown", (event) => {
+
+
+
+        if (event.key == "Enter") {
+            event.preventDefault();
+            let admin_login_btn = document.getElementById("adminLoginBtn");
+            if (admin_login_btn) {
+                admin_login_btn.focus();
+            }
+        }
+    })
+</script>
 
 <?php include_once(DIR_URL . "/Includes/footer.php"); ?>
