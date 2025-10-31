@@ -1,77 +1,5 @@
 <style>
-#grid-container-offcanvas {
-    display: grid;
-    grid-template-areas:
-        "header header header"
-        "offcanvas mainContent mainContent"
-        "developer name contact";
-    grid-template-columns: 250px 1fr 7fr;
-    grid-template-rows: 80px 665px 56px;
-    /* gap: 3px; */
-    /* padding: 10px; */
-    /* background-color: dodgerblue; */
-}
 
-#grid-container-offcanvas div {
-    padding: 10px;
-    /* background-color: white; */
-}
-
-#header {
-    grid-area: header;
-    background-color: #198754;
-}
-
-#offcanvas {
-    grid-area: offcanvas;
-    background-color: #198754 !important;
-    /* display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center; */
-}
-
-#main-content {
-    grid-area: mainContent;
-    /* display: flex; */
-    /* flex-direction: column;
-    justify-content: center;
-    align-items: center; */
-}
-
-#developer {
-    grid-area: developer;
-    background-color: #198754;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    color: white;
-    font-size: large
-}
-
-#name {
-    grid-area: name;
-    background-color: #198754;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    color: white;
-    font-size: large;
-    font-weight: bolder;
-}
-
-#contact {
-    grid-area: contact;
-    background-color: #198754;
-    display: flex;
-    flex-direction: column;
-    /* justify-content: end;*/
-    align-items: end;
-    color: white;
-    font-weight: bolder;
-    font-size: 15px;
-
-}
 </style>
 <?php
 include_once("../Config/config.php");
@@ -91,7 +19,7 @@ include_once(DIR_URL . "../Includes/header.php");
         </div>
 
         <div id="offcanvas"><?php include_once(DIR_URL . "../Includes/sidebar.php"); ?></div>
-        <div id="main-content"></div>
+        <div id="main-content"><?php include_once(DIR_URL . "../Includes/adminDashBoardContent.php"); ?></div>
         <div id="developer">Developed by</div>
         <div id="name">Althaf Hussain J</div>
         <div id="contact">

@@ -38,61 +38,64 @@ if (isset($_POST['showTaskBtn'])) {
 } else {
 }
 ?>
-<form action="" method="post">
-    <h1>Task Management</h1>
-    <hr>
-
-    <div class="form-floating">
-
-        <select name="projectSelection" id="projectSelection" class="form-control">
-            <option value="TASK MANAGEMENT SYSTEM">TMS</option>
-        </select>
-
-    </div>
-    <div class="form-floating">
+<div id="">
 
 
-        <input class=" form-control" type="text" name="taskTitle" id="taskTitle" placeholder="Task Title">
-        <label for="">Task Title</label>
-    </div>
-    <div class="form-floating">
-        <input class="form-control" type="text" name="taskDescription" id="taskDescription"
-            placeholder=" Task Description">
-        <label for="">Task Description</label>
-    </div>
-    <div class="form-floating">
-        <select name="userSelection" id="userSelection" class="form-control">
+    <form action="" method="post">
+        <h1>Task Management</h1>
+        <hr>
 
-            <option value="user1">user1</option>
-            <option value="user2">user2</option>
-        </select>
-        <label for="">Select User</label>
-    </div>
-    <div class="form-floating">
-        <select class="form-control" type="text" name="taskPriority" id="taskPriority">
-            <option value="low">Low</option>
-            <option value="medium">Medium</option>
-            <option value="high">High</option>
-        </select>
-        <label for="">Task Priority</label>
-    </div>
-    <div class="form-control" style="display:flex;gap:10px;" id="taskStatus">
-        <input type="radio" name="taskStatus" id="notStarted" checked value="Not Started">
-        <label for="">Not Started</label>
-        <input type="radio" name="taskStatus" id="inProgress" value="In Progress">
-        <label for="">In Progress</label>
-        <input type="radio" name="taskStatus" id="completed" value="Completed">
-        <label for="">Completed</label>
+        <div class="form-floating">
 
-    </div>
-    <div class=" form-floating">
-        <input class="form-control" type="date" name="taskDeadLine" id="taskDeadLine" placeholder="Task DeadLine">
-        <label for="">Task DeadLine</label>
-    </div>
+            <select name="projectSelection" id="projectSelection" class="form-control">
+                <option value="TASK MANAGEMENT SYSTEM">TMS</option>
+            </select>
 
-    <button type="submit" class="btn btn-success" name="scheduleTask" id="scheduleTask">Schedule Task</button>
-</form>
+        </div>
+        <div class="form-floating">
 
+
+            <input class=" form-control" type="text" name="taskTitle" id="taskTitle" placeholder="Task Title">
+            <label for="">Task Title</label>
+        </div>
+        <div class="form-floating">
+            <input class="form-control" type="text" name="taskDescription" id="taskDescription"
+                placeholder=" Task Description">
+            <label for="">Task Description</label>
+        </div>
+        <div class="form-floating">
+            <select name="userSelection" id="userSelection" class="form-control">
+
+                <option value="user1">user1</option>
+                <option value="user2">user2</option>
+            </select>
+            <label for="">Select User</label>
+        </div>
+        <div class="form-floating">
+            <select class="form-control" type="text" name="taskPriority" id="taskPriority">
+                <option value="low">Low</option>
+                <option value="medium">Medium</option>
+                <option value="high">High</option>
+            </select>
+            <label for="">Task Priority</label>
+        </div>
+        <div class="form-control" style="display:flex;gap:10px;" id="taskStatus">
+            <input type="radio" name="taskStatus" id="notStarted" checked value="Not Started">
+            <label for="">Not Started</label>
+            <input type="radio" name="taskStatus" id="inProgress" value="In Progress">
+            <label for="">In Progress</label>
+            <input type="radio" name="taskStatus" id="completed" value="Completed">
+            <label for="">Completed</label>
+
+        </div>
+        <div class=" form-floating">
+            <input class="form-control" type="date" name="taskDeadLine" id="taskDeadLine" placeholder="Task DeadLine">
+            <label for="">Task DeadLine</label>
+        </div>
+
+        <button type="submit" class="btn btn-success" name="scheduleTask" id="scheduleTask">Schedule Task</button>
+    </form>
+</div>
 
 
 <div id="showTaskListForm">
@@ -129,18 +132,7 @@ if (isset($_POST['showTaskBtn'])) {
     ?>
     <div id="taskName">Task Name</div>
     <div id="descriptionDetails" style="height:80px;overflow-y:scroll">
-        lsjdfljslkdfjlkskdf
-        lksdjfl sdjflkjslkdfjlksdjfweroiu klsjdflkjlksdjf sdfsjdlfjslkdf l
-        lksjdlfjlksjdflkjsdf 10px
-        lksjdlfjlksdf lksdjflkjsdlkfjkjsldjflsd
-
-
-        sdlkfjlsjdfljlsdfjlskjdf
-        sdlkfjlsjdflkjlsdjf
-        slkdjflksjd
     </div>
-
-
     <div id="assignedUserName">Assigned User Name</div>
     <div id="priorityLevel">Priority Level</div>
     <div id="deadlineLimit">Dead Line Limit</div>

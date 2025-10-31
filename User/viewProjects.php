@@ -14,12 +14,13 @@ include_once(DIR_URL . "../Includes/header.php");
 <body>
     <div id="grid-container-offcanvas-user">
         <div id="header-user">
+
             <?php include_once(DIR_URL . "../Includes/userNavbar.php"); ?>
         </div>
 
         <div id="offcanvas-user"><?php include_once(DIR_URL . "../Includes/userSidebar.php"); ?>
         </div>
-        <div id="main-content-user"><?php include_once(DIR_URL . "../Includes/userDashBoardContent.php"); ?> </div>
+        <div id="main-content-user"><?php include_once(DIR_URL . "../Includes/viewProjectsContent.php"); ?></div>
         <div id="developer-user">Developed by</div>
         <div id="name-user">Althaf Hussain J</div>
         <div id="contact-user">
@@ -28,15 +29,6 @@ include_once(DIR_URL . "../Includes/header.php");
                 <li>althafhussain2k3@gmail.com</li>
             </ul>
         </div>
-        <!-- <div id=" footer">Developed By <span style="font-weight:bolder">Althaf Hussain J</span><span
-                    style="font-weight:bolder;padding-left:10px">
-                    9094095610
-                </span>
-                <span style="font-weight:bolder">
-
-                    althafhussain2k3@gmail.com
-                </span>
-        </div> -->
     </div>
 
 

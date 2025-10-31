@@ -1,13 +1,14 @@
 <?php
+
+
 include_once("../Config/config.php");
 include_once(DIR_URL . "../Includes/header.php");
 
 ?>
 
 <body>
-    <div id="userSignUpDiv" style="height:300px">
-        <form action="" class="form-control" id="userProfileUpdateForm" method="post">
-            <h1>User Profile - Update</h1>
+    <div id="userSignUpDiv">
+        <form action="" class="form-control" id="userSignUpForm" method="post">
             <div class="form-floating">
                 <input type="text" name="userName" id="userName" placeholder="Name" class="form-control">
                 <label for="">User Name</label>
@@ -25,8 +26,7 @@ include_once(DIR_URL . "../Includes/header.php");
                 <label for="" class="form-label">Password</label>
             </div>
             <br>
-            <button type="submit" class="btn btn-primary" name="userProfileUpdateBtn"
-                id="userProfileUpdateBtn">Update</button>
+            <button type="submit" class="btn btn-primary" name="userSignUpBtn" id="userSignUpBtn">Sign Up</button>
 
         </form>
     </div>

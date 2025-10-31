@@ -47,9 +47,10 @@ include_once(DIR_URL . "/Includes/header.php");
     <div id="title-label">
         <img style="width:80px;" src=" <?php echo BASE_URL."../Images/task_logo.png";?>" alt="">
         <h1>Task Management System</h1>
+
     </div>
     <div><img src="<?php echo BASE_URL . "../Images/admin_image.jpeg"  ?>" id="admin-image" alt="">
-        <span style="    font-weight: bolder;"> Admin</span>
+        <span style="font-weight: bolder;"> Admin</span>
     </div>
     <div id="logout-btn-div" style=""><a href="<?php echo BASE_URL . "../logout.php" ?>" class="btn btn-danger"
             style="width:140px;font-weight:bolder;margin-top:-1px">Logout</a>

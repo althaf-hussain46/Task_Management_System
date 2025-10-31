@@ -17,7 +17,7 @@ include_once(DIR_URL . "../Includes/header.php");
         </div>
 
         <div id="offcanvas"><?php include_once(DIR_URL . "../Includes/sidebar.php"); ?></div>
-        <div id="main-content"><?php include_once(DIR_URL . "../Includes/projectListDesign.php") ?></div>
+        <div id="main-content"><?php include_once(DIR_URL . "../Includes/adminViewTasksContent.php"); ?></div>
         <div id="developer">Developed by</div>
         <div id="name">Althaf Hussain J</div>
         <div id="contact">
@@ -41,4 +41,4 @@ include_once(DIR_URL . "../Includes/header.php");
 <?php
 include_once(DIR_URL . "/Includes/footer.php");
 ?>
-<?php ob_flush();?>
+<?php ob_flush(); ?>

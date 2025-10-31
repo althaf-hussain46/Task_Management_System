@@ -14,7 +14,7 @@ if (isset($_POST['adminLoginSubmitBtn'])) {
     if ($adminName == $admin_name && $adminPassword == $admin_password) {
         header("Location: " . BASE_URL . "/Admin/adminDashBoard.php");
     } else {
-        echo "admin not found";
+        $_SESSION['failure_notification'] = "Admin Does Not Exist";
     }
     // echo "admin name = " . $adminName;
     // echo "<br>";
@@ -27,6 +27,24 @@ if (isset($_POST['adminLoginSubmitBtn'])) {
 ?>
 
 <body>
+    <?php
+    if (isset($_SESSION['success_notification']) && $_SESSION['success_notification'] != "") {
+    ?>
+        <div class="alert alert-primary" id="success-notification">
+            <?php echo $_SESSION['success_notification'];
+            unset($_SESSION['success_notification']);
+            ?>
+        </div>
+    <?php } ?>
+    <?php
+    if (isset($_SESSION['failure_notification']) && $_SESSION['failure_notification'] != "") {
+    ?>
+        <div class="alert alert-danger" id="failure-notification">
+            <?php echo $_SESSION['failure_notification'];
+            unset($_SESSION['failure_notification']);
+            ?>
+        </div>
+    <?php } ?>
     <div id="adminLoginDiv">
         <form action="" class="form-control" id="adminLoginForm" method="post">
             <!-- <h3 style="font-family:Verdana, Geneva, Tahoma, sans-serif;">Login Form</h1> -->
@@ -44,13 +62,25 @@ if (isset($_POST['adminLoginSubmitBtn'])) {
                 <label for="" class="form-label">Password</label>
             </div>
             <br>
-            <button type="submit" class="btn btn-primary" name="adminLoginSubmitBtn" id="adminLoginBtn">Login</button>
+            <button type="submit" class="btn btn-success" name="adminLoginSubmitBtn" id="adminLoginBtn">Login</button>
+            <br>
         </form>
     </div>
 </body>
 
 
 <script>
+    setTimeout(() => {
+        let failure_alert = document.getElementById("failure-notification")
+        if (failure_alert) {
+            failure_alert.style.display = "none";
+        }
+        let success_alert = document.getElementById("success-notification")
+        if (success_alert) {
+            success_alert.style.display = "none";
+        }
+    }, 2000);
+
     window.onload = () => {
         let admin = document.getElementById("adminName");
         if (admin) {
