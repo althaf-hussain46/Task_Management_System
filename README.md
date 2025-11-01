@@ -100,3 +100,24 @@ CREATE TABLE user (
 ### 7. Admin Credentials :
 #### 👤 User Name : admin
 #### 🔑 Password  : 123
+
+### 8. User Credentials :
+#### 👤 User Name : althafhussain2k3@gmail.com
+#### 🔑 Password  : 123
+
+#### 👤 User Name : sam123@gmail.com
+#### 🔑 Password  : 123
+
+#### 👤 User Name : jhon@gmail.com
+#### 🔑 Password  : 123
+
+### 8. Project Links :
+
+Website Link : https://taskmanagementsystem.42web.io/
+<br>
+GitHub Repository :  https://github.com/althaf-hussain46/Task_Management_System
+<br>
+Online Deployed Demo Video  : https://drive.google.com/file/d/1Wmz1jVyHKrbi24e2QXhlfK51vZTD5rPP/view?usp=sharing
+<br>
+Youtube (Development Process) : https://www.youtube.com/@Althaf_Hussain_Projects
+
