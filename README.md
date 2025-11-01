@@ -2,8 +2,8 @@
 <h2 align="center">(Interview Task)</h2>
 
 <h3>1. Task Overview :</h3>
-<pre>         Developed a web-based Task Management System with Three modules - Admin, User & Deadline Tracking - 
-         to efficiently assign and track user activities.
+<pre>     Developed a web-based Task Management System with Three modules - Admin, User & Deadline Tracking - 
+     to efficiently assign and track user activities.
 </pre>
 <h3>2. Key Features :</h3>
 <pre>
