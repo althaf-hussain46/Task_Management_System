@@ -84,15 +84,15 @@ if (isset($_POST['userLoginBtn'])) {
                         <form method="post">
                             <div class="mb-3">
                                 <label for="user-name" class="col-form-label">User Name</label>
-                                <input type="text" class="form-control" name="signUpUserName" id="signUpUserName">
+                                <input type="text" class="form-control" required name="signUpUserName" id="signUpUserName">
                             </div>
                             <div class="mb-3">
                                 <label for="user-email" class="col-form-label">User Email</label>
-                                <input type="email" class=" form-control" name="signUpUserEmail" id="signUpUserEmail">
+                                <input type="email" class=" form-control" required name="signUpUserEmail" id="signUpUserEmail">
                             </div>
                             <div class="mb-3">
                                 <label for="user-password" class="col-form-label">Password</label>
-                                <input type="text" class="form-control" name="signUpUserPassword"
+                                <input type="text" class="form-control" required name="signUpUserPassword"
                                     id="signUpUserPassword">
                             </div>
                             <hr>
