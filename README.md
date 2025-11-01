@@ -115,7 +115,7 @@ CREATE TABLE user (
   
 <br> 
 
-- 👤 User Name : jhon@gmail.com
+- 👤 User Name : john@gmail.com
 - 🔑 Password  : 123
   
 <br>  
