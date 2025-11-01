@@ -98,20 +98,27 @@ CREATE TABLE user (
 ```
 
 ### 7. Admin Credentials :
-<pre>
-       #### 👤 User Name : admin
-               #### 🔑 Password  : 123
-</pre>
+
+- 👤 User Name : admin
+- 🔑 Password  : 123
+
 
 ### 8. User Credentials :
-<pre>      #### 👤 User Name : althafhussain2k3@gmail.com
-              #### 🔑 Password  : 123
 
-#### 👤 User Name : sam123@gmail.com
-#### 🔑 Password  : 123
+- 👤 User Name : althafhussain2k3@gmail.com
+- 🔑 Password  : 123
 
-#### 👤 User Name : jhon@gmail.com
-#### 🔑 Password  : 123</pre>
+<br>
+
+- 👤 User Name : sam123@gmail.com
+- 🔑 Password  : 123
+  
+<br> 
+
+- 👤 User Name : jhon@gmail.com
+- 🔑 Password  : 123
+  
+<br>  
 
 ### 8. Project Links :
 
