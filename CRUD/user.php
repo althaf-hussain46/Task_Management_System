@@ -39,6 +39,15 @@ class  UserCRUD
         return $result;
     }
     
+    public function userDetailsForAdminDashBoard($con,$filter)
+    {
+        $fetchUserDetails = "SELECT*FROM user
+        where   user_name like '%$filter%' OR user_email LIKE '%$filter%'";
+        $result = $con->query($fetchUserDetails);
+        return $result;
+    }
+    
+    
     public function userDetailsByProjects($con,$project_id)
     {
         $fetchUserDetails = "select us.user_id, us.user_name,prm.project_name
