@@ -171,7 +171,11 @@ if (isset($_POST['taskSearchBtn'])) {
                 ?>
             <div id="projectCollapsibleContainer" data-bs-toggle="collapse"
                 data-bs-target="#collapseTaskContainer<?php echo $i; ?>">
-                <div><?php echo $i; ?></div>
+                <div><?php echo $i; ?>
+                    <?php if ($fetch_task_details_result->num_rows > 0) { ?>
+                    <i class="bi bi-chevron-down" style="-webkit-text-stroke:2px;color:black;"></i>
+                    <?php } ?>
+                </div>
                 <div>
 
                     <?php echo $project_data['project_name']; ?>
