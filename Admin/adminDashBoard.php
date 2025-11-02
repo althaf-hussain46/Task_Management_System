@@ -14,7 +14,6 @@ include_once(DIR_URL . "../Includes/header.php");
 <body>
     <div id="grid-container-offcanvas">
         <div id="header">
-
             <?php include_once(DIR_URL . "../Includes/adminNavbar.php"); ?>
         </div>
 
