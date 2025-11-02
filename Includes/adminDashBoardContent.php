@@ -1,37 +1,37 @@
 <style>
-#userDashBoardCardGrid {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 10px 150px 500px;
-    /* gap: 3px;
+    #userDashBoardCardGrid {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 10px 150px 500px;
+        /* gap: 3px;
         padding: 10px;
         background-color: dodgerblue; */
-}
+    }
 
-#userDashBoardCardGrid div {
-    /* padding: 10px;
+    #userDashBoardCardGrid div {
+        /* padding: 10px;
     background-color: white; */
-}
+    }
 
 
 
-div#card1 {
-    font-size: 20px;
-    font-weight: bolder;
-}
+    div#card1 {
+        font-size: 20px;
+        font-weight: bolder;
+    }
 
-div#card2 {
-    font-size: 10px;
-    font-weight: bold;
-    display: flex;
-}
+    div#card2 {
+        font-size: 10px;
+        font-weight: bold;
+        display: flex;
+    }
 
-div#card3 {
+    div#card3 {
 
-    display: flex;
-    justify-content: center;
-    margin-top: 150px;
-}
+        display: flex;
+        justify-content: center;
+        margin-top: 150px;
+    }
 </style>
 
 
@@ -81,12 +81,12 @@ $unassigned_projects_count = $get_project_data->totalProjectsUnassigned($con)
 
                     <div class="card-body" style="width:100px;">
                         <?php if ($total_projects['total_count'] > 1) { ?>
-                        <h2 class="card-title text-center">P R O J E C T S -
-                            <?php echo $total_projects['total_count']; ?></h2>
+                            <h2 class="card-title text-center">P R O J E C T S -
+                                <?php echo $total_projects['total_count']; ?></h2>
                         <?php } else { ?>
-                        <h2 class="card-title text-center">P R O J E C T -
-                            <?php echo $total_projects['total_count']; ?>
-                        </h2>
+                            <h2 class="card-title text-center">P R O J E C T -
+                                <?php echo $total_projects['total_count']; ?>
+                            </h2>
                         <?php } ?>
 
                         <h4 class="card-text text-center" style="margin-top:50px;">Assigned -
@@ -146,7 +146,7 @@ $unassigned_projects_count = $get_project_data->totalProjectsUnassigned($con)
                     <img width="220" src="<?php echo BASE_URL . "/Images/users.png" ?>" alt="">
 
                     <div class="card-body" style="width:100px;">
-                        <h2 class="card-text text-center">U S E R S -<?php echo $total_users['total_user']; ?></h2>
+                        <h2 class="card-text text-center">U S E R S - <?php echo $total_users['total_user']; ?></h2>
                         <h6 class="card-text text-center">(Developers)</h6>
                         <h1 class="card-text text-center"></h1>
                         <br>
@@ -168,5 +168,27 @@ $unassigned_projects_count = $get_project_data->totalProjectsUnassigned($con)
                 </div>
             </a>
         </div>
+
+        <div class="col-sm-6 mb-3 mb-sm-0">
+            <a href="<?php echo BASE_URL . "/Admin/totalUsers.php"; ?>" style="text-decoration:none">
+                <div class="card"
+                    style="display:flex;flex-direction:row;height:280px;box-shadow: seagreen 1px 5px 15px 0px;border-radius:15px">
+
+                    <img width="220" src="<?php echo BASE_URL . "/Images/users_list_image.png" ?>" alt="">
+
+                    <div class="card-body" style="width:100px;">
+                        <h2 class="card-text text-center" style="letter-spacing:15px;">USERSLIST</h2>
+                        <h6 class="card-text text-center">(Developers)</h6>
+                        <h1 class="card-text text-center"></h1>
+                        <br>
+                        <h1 class="card-title text-center">
+                            <?php echo $total_users['total_user']; ?>
+                        </h1>
+                    </div>
+                </div>
+            </a>
+        </div>
+
     </div>
+
 </div>
