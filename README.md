@@ -121,7 +121,7 @@ CREATE TABLE user (
 <br>  
 <br>
 
-### 8. Screenshots :
+### 9. Screenshots :
 <br>
 <br>
 <img width="1366" height="768" alt="image" src="https://github.com/user-attachments/assets/c8bcb529-0885-4966-9be0-c2e2014cb6bb" />
@@ -160,7 +160,7 @@ CREATE TABLE user (
 <br>
 <br>
 
-### 9. Project Links :
+### 10. Project Links :
 
 Website Link : https://taskmanagementsystem.42web.io/
 <br>
