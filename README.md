@@ -124,7 +124,6 @@ CREATE TABLE user (
 ### 8. Screenshots :
 <br>
 <br>
-<br>
 <img width="1366" height="768" alt="image" src="https://github.com/user-attachments/assets/c8bcb529-0885-4966-9be0-c2e2014cb6bb" />
 <br>
 <br>
@@ -154,18 +153,12 @@ CREATE TABLE user (
 <br>
 <br>
 <img width="1366" height="768" alt="image" src="https://github.com/user-attachments/assets/2d157117-eb95-48dc-ad48-c9610ec3ed81" />
-
-
-
-
-
-
-
-
-
-
-
-
+<br>
+<br>
+<br>
+<img width="1366" height="768" alt="image" src="https://github.com/user-attachments/assets/53bce542-5af3-4286-944c-ec070b7d6f7f" />
+<br>
+<br>
 
 ### 9. Project Links :
 
