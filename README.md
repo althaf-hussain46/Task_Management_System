@@ -2,9 +2,10 @@
 <!-- <h2 align="center"><a href="Task_Management_System_Interview_Task_Description.pdf" target="_blank" style="text-decoration:underline;">(Interview Task)</a></h2> -->
 <p align="center">
   <a href="Task_Management_System_Interview_Task_Description.pdf" target="_blank">
-    <img alt="Interview Task" src="assets/interview-task.svg" />
+    <img src="https://img.shields.io/badge/Interview%20Task-blue?style=for-the-badge" alt="Interview Task">
   </a>
 </p>
+
 
 
 
